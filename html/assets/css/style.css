@@ -2980,12 +2980,10 @@ a {
     background-position: 75% center;
   }
   .contact-hero-overlay {
-    background: linear-gradient(
-      90deg,
-      rgba(10, 25, 47, 0.95) 0%,
-      rgba(10, 25, 47, 0.7) 60%,
-      rgba(10, 25, 47, 0.2) 100%
-    );
+    background: rgba(10, 25, 47, 0.82); /* Uniform dark overlay for readability */
+  }
+  .contact-hero-title .text-maroon {
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5); /* extra pop for maroon */
   }
 }
 
