@@ -2015,12 +2015,14 @@ a {
 }
 
 @media (max-width: 991px) {
+  .about-hero-bg-layer {
+    background-position: 75% center;
+  }
   .about-hero-gradient-overlay {
-    background: linear-gradient(
-      90deg,
-      rgba(10, 25, 47, 0.95) 0%,
-      rgba(10, 25, 47, 0.85) 100%
-    );
+    background: rgba(10, 25, 47, 0.82);
+  }
+  .hero-title-main .text-green {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* extra pop for green text */
   }
   .story-quote-box {
     bottom: -15px !important;
@@ -2980,10 +2982,15 @@ a {
     background-position: 75% center;
   }
   .contact-hero-overlay {
-    background: rgba(10, 25, 47, 0.82); /* Uniform dark overlay for readability */
+    background: rgba(
+      10,
+      25,
+      47,
+      0.82
+    ); /* Uniform dark overlay for readability */
   }
   .contact-hero-title .text-maroon {
-    text-shadow: 0px 2px 4px rgba(0,0,0,0.5); /* extra pop for maroon */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* extra pop for maroon */
   }
 }
 
@@ -3002,7 +3009,7 @@ a {
 .contact-hero-divider {
   width: 50px;
   height: 2px;
-  background-color: #b12038;
+  background-color: #46d946 !important;
   margin-bottom: 30px;
 }
 .contact-hero-subtitle {
