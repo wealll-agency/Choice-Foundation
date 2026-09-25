@@ -260,22 +260,22 @@
 
             <!-- Gallery Grid -->
             <div class="pure-css-gallery-grid">
-    <a href="assets/images/gallery-image1.png" class="pure-css-gallery-item gi-1 glightbox"><img src="assets/images/gallery-image1.png" alt="Gallery Image 1"></a>
-    <a href="assets/images/gallery-image2.png" class="pure-css-gallery-item gi-2 glightbox"><img src="assets/images/gallery-image2.png" alt="Gallery Image 2"></a>
-    <a href="assets/images/gallery-image3.png" class="pure-css-gallery-item gi-3 glightbox"><img src="assets/images/gallery-image3.png" alt="Gallery Image 3"></a>
-    <a href="assets/images/gallery-image4.png" class="pure-css-gallery-item gi-4 glightbox"><img src="assets/images/gallery-image4.png" alt="Gallery Image 4"></a>
-    <a href="assets/images/gallery-image5.png" class="pure-css-gallery-item gi-5 glightbox"><img src="assets/images/gallery-image5.png" alt="Gallery Image 5"></a>
-    <a href="assets/images/gallery-image6.png" class="pure-css-gallery-item gi-6 glightbox"><img src="assets/images/gallery-image6.png" alt="Gallery Image 6"></a>
-    <a href="assets/images/gallery-image7.png" class="pure-css-gallery-item gi-7 glightbox"><img src="assets/images/gallery-image7.png" alt="Gallery Image 7"></a>
-    <a href="assets/images/gallery-image8.png" class="pure-css-gallery-item gi-8 glightbox"><img src="assets/images/gallery-image8.png" alt="Gallery Image 8"></a>
-    <a href="assets/images/gallery-image9.png" class="pure-css-gallery-item gi-9 glightbox"><img src="assets/images/gallery-image9.png" alt="Gallery Image 9"></a>
-    <a href="assets/images/gallery-image10.png" class="pure-css-gallery-item gi-10 glightbox"><img src="assets/images/gallery-image10.png" alt="Gallery Image 10"></a>
-    <a href="assets/images/gallery-image11.png" class="pure-css-gallery-item gi-11 glightbox"><img src="assets/images/gallery-image11.png" alt="Gallery Image 11"></a>
-    <a href="assets/images/gallery-image12.png" class="pure-css-gallery-item gi-12 glightbox"><img src="assets/images/gallery-image12.png" alt="Gallery Image 12"></a>
-    <a href="assets/images/gallery-image13.png" class="pure-css-gallery-item gi-13 glightbox"><img src="assets/images/gallery-image13.png" alt="Gallery Image 13"></a>
-    <a href="assets/images/gallery-image14.png" class="pure-css-gallery-item gi-14 glightbox"><img src="assets/images/gallery-image14.png" alt="Gallery Image 14"></a>
-    <a href="assets/images/gallery-image15.png" class="pure-css-gallery-item gi-15 glightbox"><img src="assets/images/gallery-image15.png" alt="Gallery Image 15"></a>
-    <a href="assets/images/gallery-image16.png" class="pure-css-gallery-item gi-16 glightbox"><img src="assets/images/gallery-image16.png" alt="Gallery Image 16"></a>
+    <a href="assets/images/gallery-image1.png" class="pure-css-gallery-item gi-1 workshops glightbox"><img src="assets/images/gallery-image1.png" alt="Gallery Image 1"></a>
+    <a href="assets/images/gallery-image2.png" class="pure-css-gallery-item gi-2 community glightbox"><img src="assets/images/gallery-image2.png" alt="Gallery Image 2"></a>
+    <a href="assets/images/gallery-image3.png" class="pure-css-gallery-item gi-3 artists glightbox"><img src="assets/images/gallery-image3.png" alt="Gallery Image 3"></a>
+    <a href="assets/images/gallery-image4.png" class="pure-css-gallery-item gi-4 behind-scenes glightbox"><img src="assets/images/gallery-image4.png" alt="Gallery Image 4"></a>
+    <a href="assets/images/gallery-image5.png" class="pure-css-gallery-item gi-5 achievements glightbox"><img src="assets/images/gallery-image5.png" alt="Gallery Image 5"></a>
+    <a href="assets/images/gallery-image6.png" class="pure-css-gallery-item gi-6 events glightbox"><img src="assets/images/gallery-image6.png" alt="Gallery Image 6"></a>
+    <a href="assets/images/gallery-image7.png" class="pure-css-gallery-item gi-7 workshops glightbox"><img src="assets/images/gallery-image7.png" alt="Gallery Image 7"></a>
+    <a href="assets/images/gallery-image8.png" class="pure-css-gallery-item gi-8 community glightbox"><img src="assets/images/gallery-image8.png" alt="Gallery Image 8"></a>
+    <a href="assets/images/gallery-image9.png" class="pure-css-gallery-item gi-9 artists glightbox"><img src="assets/images/gallery-image9.png" alt="Gallery Image 9"></a>
+    <a href="assets/images/gallery-image10.png" class="pure-css-gallery-item gi-10 behind-scenes glightbox"><img src="assets/images/gallery-image10.png" alt="Gallery Image 10"></a>
+    <a href="assets/images/gallery-image11.png" class="pure-css-gallery-item gi-11 achievements glightbox"><img src="assets/images/gallery-image11.png" alt="Gallery Image 11"></a>
+    <a href="assets/images/gallery-image12.png" class="pure-css-gallery-item gi-12 events glightbox"><img src="assets/images/gallery-image12.png" alt="Gallery Image 12"></a>
+    <a href="assets/images/gallery-image13.png" class="pure-css-gallery-item gi-13 workshops glightbox"><img src="assets/images/gallery-image13.png" alt="Gallery Image 13"></a>
+    <a href="assets/images/gallery-image14.png" class="pure-css-gallery-item gi-14 community glightbox"><img src="assets/images/gallery-image14.png" alt="Gallery Image 14"></a>
+    <a href="assets/images/gallery-image15.png" class="pure-css-gallery-item gi-15 artists glightbox"><img src="assets/images/gallery-image15.png" alt="Gallery Image 15"></a>
+    <a href="assets/images/gallery-image16.png" class="pure-css-gallery-item gi-16 behind-scenes glightbox"><img src="assets/images/gallery-image16.png" alt="Gallery Image 16"></a>
 </div>
 <!-- Load More Button -->
             <div class="row mt-5">
@@ -400,6 +400,45 @@
             const galleryGrid = document.querySelector('#galleryGrid');
             if (galleryGrid) {
                 // Isotope is no longer used. Native CSS Grid handles the layout.
+                
+    // Custom CSS Grid Filtering
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const gridItems = document.querySelectorAll('.pure-css-gallery-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+
+            const filterValue = this.getAttribute('data-filter').replace('.', '');
+
+            gridItems.forEach(item => {
+                // Initial state for animation
+                item.style.transition = 'all 0.4s ease';
+                
+                if (filterValue === '*' || item.classList.contains(filterValue)) {
+                    // Show item
+                    item.style.display = 'block';
+                    // Force reflow
+                    void item.offsetWidth;
+                    item.style.transform = 'scale(1)';
+                    item.style.opacity = '1';
+                } else {
+                    // Hide item
+                    item.style.transform = 'scale(0.8)';
+                    item.style.opacity = '0';
+                    setTimeout(() => {
+                         if (!item.classList.contains('active-filter')) {
+                             item.style.display = 'none';
+                         }
+                    }, 400);
+                }
+            });
+        });
+    });
+
                 // Initialize GLightbox
                 const lightbox = GLightbox({
                     selector: '.glightbox',
