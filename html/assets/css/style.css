@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    CSS Variables & Base
    ========================================================================== */
 :root {
@@ -2976,6 +2976,17 @@ a {
   .contact-form-card {
     padding: 30px 20px !important;
   }
+  .contact-hero-bg-layer {
+    background-position: 75% center;
+  }
+  .contact-hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(10, 25, 47, 0.95) 0%,
+      rgba(10, 25, 47, 0.7) 60%,
+      rgba(10, 25, 47, 0.2) 100%
+    );
+  }
 }
 
 /* Contact Page Specific Elements (Refactored Inline Styles) */
@@ -2983,7 +2994,7 @@ a {
   background-image: url("../images/contact-hero-bg.png");
 }
 .contact-hero-eyebrow {
-  color: #b12038 !important;
+  color: #46d946 !important;
   font-size: 0.75rem;
   letter-spacing: 3px;
 }
