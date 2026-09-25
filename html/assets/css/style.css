@@ -2594,6 +2594,164 @@ a {
    Consolidated Responsive Styles
    ========================================================================== */
 
+
+/* ==========================================================================
+   Gallery Page Styles
+   ========================================================================== */
+.gallery-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--color-navy);
+}
+
+.gallery-hero-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/gallery-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.gallery-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 25, 47, 1) 0%,
+    rgba(10, 25, 47, 0.95) 30%,
+    rgba(10, 25, 47, 0.4) 60%,
+    rgba(10, 25, 47, 0) 100%
+  );
+}
+
+.gallery-hero-divider {
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-maroon);
+  margin-bottom: 25px;
+}
+
+.gallery-hero-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.floating-script-gallery {
+  font-family: var(--font-script);
+  font-size: 4rem;
+  line-height: 1.1;
+  opacity: 0.9;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%) rotate(-15deg);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Gallery Filter Nav */
+.gallery-filter-btn {
+  background: transparent;
+  border: 1px solid #dee2e6;
+  color: var(--color-navy);
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.gallery-filter-btn:hover {
+  border-color: var(--color-maroon);
+  color: var(--color-maroon);
+}
+
+.gallery-filter-btn.active {
+  background-color: var(--color-maroon);
+  border-color: var(--color-maroon);
+  color: white;
+}
+
+/* Gallery Grid */
+.gallery-img-wrapper {
+  transition: all 0.4s ease;
+  cursor: pointer;
+  background-color: #f8f9fa;
+}
+
+.gallery-img-wrapper img {
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.gallery-img-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy);
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  padding-left: 4px;
+}
+
+.gallery-img-wrapper:hover .video-play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  background: var(--color-maroon);
+  color: white;
+}
+
+.gallery-leaf-bg-left {
+  position: absolute;
+  top: 0;
+  left: -5%;
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/leaf-pattern.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.gallery-leaf-bg-right {
+  position: absolute;
+  bottom: -5%;
+  right: -5%;
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/leaf-pattern.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+  transform: rotate(180deg);
+}
+
+
 @media (max-width: 1399px) {
   .hero-title {
     font-size: 4.2rem;
