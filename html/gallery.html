@@ -395,60 +395,7 @@
 
     <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const galleryGrid = document.querySelector('.pure-css-gallery-grid') || document.querySelector('#galleryGrid');
-            if (galleryGrid) {
-                // Isotope is no longer used. Native CSS Grid handles the layout.
-                
-    // Custom CSS Grid Filtering
-    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
-    const gridItems = document.querySelectorAll('.pure-css-gallery-item');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            this.classList.add('active');
-
-            const filterValue = this.getAttribute('data-filter').replace('.', '');
-
-            gridItems.forEach(item => {
-                // Initial state for animation
-                item.style.transition = 'all 0.4s ease';
-                
-                if (filterValue === '*' || item.classList.contains(filterValue)) {
-                    // Show item
-                    item.style.display = 'block';
-                    // Force reflow
-                    void item.offsetWidth;
-                    item.style.transform = 'scale(1)';
-                    item.style.opacity = '1';
-                } else {
-                    // Hide item
-                    item.style.transform = 'scale(0.8)';
-                    item.style.opacity = '0';
-                    setTimeout(() => {
-                         if (!item.classList.contains('active-filter')) {
-                             item.style.display = 'none';
-                         }
-                    }, 400);
-                }
-            });
-        });
-    });
-
-                // Initialize GLightbox
-                const lightbox = GLightbox({
-                    selector: '.glightbox',
-                    touchNavigation: true,
-                    loop: true,
-                    autoplayVideos: true
-                });
-            }
-        });
-    </script>
+    
 </body>
 
 </html>
