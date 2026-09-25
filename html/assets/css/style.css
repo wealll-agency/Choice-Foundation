@@ -2754,6 +2754,8 @@ a {
 
 
 /* Custom Isotope Grid for Gallery */
+.gallery-section { overflow: hidden; }
+
 .custom-isotope-grid {
   margin: 0 -8px; /* Offset padding */
   width: calc(100% + 16px);
