@@ -3233,3 +3233,27 @@ a {
     font-size: 0.8rem;
   }
 }
+
+/* Forced Aspect Ratios for Perfect Masonry Puzzle */
+.gallery-item a {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #f8f9fa;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Standard Heights */
+.ar-standard a { aspect-ratio: 1 / 1.2; }
+.ar-wide a { aspect-ratio: 2 / 1.2; }
+
+/* Custom Heights for variation like mockup */
+.ar-tall a { aspect-ratio: 1 / 1.8; }
+.ar-short a { aspect-ratio: 1 / 0.9; }
