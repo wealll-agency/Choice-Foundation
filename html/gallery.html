@@ -27,92 +27,232 @@
     <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
-    
+
     <style id="gallery-css-grid">
-    .pure-css-gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-auto-rows: 24vw; /* Approximate 1:1.2 aspect ratio based on 20% width */
-      gap: 16px;\n      grid-auto-flow: dense;
-      margin-bottom: 40px;
-    }
-    @media (min-width: 1200px) {
-       .pure-css-gallery-grid { grid-auto-rows: 280px; }
-    }
-    .pure-css-gallery-item {
-      position: relative;
-      border-radius: 12px;
-      overflow: hidden;
-      background: #f8f9fa;
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-    .pure-css-gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-    .pure-css-gallery-item:hover img {
-      transform: scale(1.05);
-    }
-    
-    /* Layout Mapping */
-    .gi-1 { grid-column: span 1; grid-row: span 1; }
-    .gi-2 { grid-column: span 1; grid-row: span 1; }
-    .gi-3 { grid-column: span 2; grid-row: span 1; }
-    .gi-4 { grid-column: span 1; grid-row: span 1; }
+        .pure-css-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 24vw;
+            /* Approximate 1:1.2 aspect ratio based on 20% width */
+            gap: 16px;
+            grid-auto-flow: dense;
+            margin-bottom: 40px;
+        }
 
-    .gi-5 { grid-column: span 2; grid-row: span 1; }
-    .gi-6 { grid-column: span 1; grid-row: span 1; }
-    .gi-7 { grid-column: span 1; grid-row: span 2; } /* Tall */
-    .gi-8 { grid-column: span 1; grid-row: span 1; }
+        @media (min-width: 1200px) {
+            .pure-css-gallery-grid {
+                grid-auto-rows: 280px;
+            }
+        }
 
-    .gi-9 { grid-column: span 1; grid-row: span 1; }
-    .gi-10 { grid-column: span 2; grid-row: span 1; }
-    .gi-11 { grid-column: span 1; grid-row: span 1; }
+        .pure-css-gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #f8f9fa;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
 
-    .gi-12 { grid-column: span 2; grid-row: span 1; }
-    .gi-13 { grid-column: span 2; grid-row: span 1; }
-    .gi-14 { grid-column: span 1; grid-row: span 1; }
-    
-    .gi-15 { grid-column: span 3; grid-row: span 1; }
-    .gi-16 { grid-column: span 2; grid-row: span 1; }
+        .pure-css-gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
 
-    /* Responsive */
-    @media (max-width: 991px) {
-      .pure-css-gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 40vw;
-      }
-      .gi-1 { grid-column: span 1; grid-row: span 1; }
-      .gi-2 { grid-column: span 1; grid-row: span 1; }
-      .gi-3 { grid-column: span 1; grid-row: span 1; }
-      .gi-4 { grid-column: span 1; grid-row: span 1; }
-      .gi-5 { grid-column: span 2; grid-row: span 1; }
-      .gi-6 { grid-column: span 1; grid-row: span 1; }
-      .gi-7 { grid-column: span 1; grid-row: span 2; }
-      .gi-8 { grid-column: span 1; grid-row: span 1; }
-      .gi-9 { grid-column: span 1; grid-row: span 1; }
-      .gi-10 { grid-column: span 1; grid-row: span 1; }
-      .gi-11 { grid-column: span 2; grid-row: span 1; }
-      .gi-12 { grid-column: span 1; grid-row: span 1; }
-      .gi-13 { grid-column: span 2; grid-row: span 1; }
-      .gi-14 { grid-column: span 1; grid-row: span 1; }
-      .gi-15 { grid-column: span 1; grid-row: span 1; }
-      .gi-16 { grid-column: span 2; grid-row: span 1; }
-    }
-    @media (max-width: 767px) {
-      .pure-css-gallery-grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        aspect-ratio: auto;
-      }
-      .pure-css-gallery-item { aspect-ratio: 1.2 / 1; }
-      .pure-css-gallery-grid > * { grid-column: 1 / -1 !important; grid-row: auto !important; }
-    }
+        .pure-css-gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Layout Mapping */
+        .gi-1 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .gi-2 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .gi-3 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .gi-4 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .gi-5 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .gi-6 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .gi-7 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        /* Tall */
+        .gi-8 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .gi-9 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .gi-10 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .gi-11 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .gi-12 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .gi-13 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .gi-14 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .gi-15 {
+            grid-column: span 3;
+            grid-row: span 1;
+        }
+
+        .gi-16 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .pure-css-gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 40vw;
+            }
+
+            .gi-1 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-2 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-3 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-4 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-5 {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gi-6 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-7 {
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+
+            .gi-8 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-9 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-10 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-11 {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gi-12 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-13 {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gi-14 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-15 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .gi-16 {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .pure-css-gallery-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: auto;
+                aspect-ratio: auto;
+            }
+
+            .pure-css-gallery-item {
+                aspect-ratio: 1.2 / 1;
+            }
+
+            .pure-css-gallery-grid>* {
+                grid-column: 1 / -1 !important;
+                grid-row: auto !important;
+            }
+        }
     </style>
 </head>
 
@@ -260,24 +400,45 @@
 
             <!-- Gallery Grid -->
             <div class="pure-css-gallery-grid">
-    <a href="assets/images/gallery-image1.png" class="pure-css-gallery-item gi-1 workshops glightbox"><img src="assets/images/gallery-image1.png" alt="Gallery Image 1"></a>
-    <a href="assets/images/gallery-image2.png" class="pure-css-gallery-item gi-2 community glightbox"><img src="assets/images/gallery-image2.png" alt="Gallery Image 2"></a>
-    <a href="assets/images/gallery-image3.png" class="pure-css-gallery-item gi-3 artists glightbox"><img src="assets/images/gallery-image3.png" alt="Gallery Image 3"></a>
-    <a href="assets/images/gallery-image4.png" class="pure-css-gallery-item gi-4 behind-scenes glightbox"><img src="assets/images/gallery-image4.png" alt="Gallery Image 4"></a>
-    <a href="assets/images/gallery-image5.png" class="pure-css-gallery-item gi-5 achievements glightbox"><img src="assets/images/gallery-image5.png" alt="Gallery Image 5"></a>
-    <a href="assets/images/gallery-image6.png" class="pure-css-gallery-item gi-6 events glightbox"><img src="assets/images/gallery-image6.png" alt="Gallery Image 6"></a>
-    <a href="assets/images/gallery-image7.png" class="pure-css-gallery-item gi-7 workshops glightbox"><img src="assets/images/gallery-image7.png" alt="Gallery Image 7"></a>
-    <a href="assets/images/gallery-image8.png" class="pure-css-gallery-item gi-8 community glightbox"><img src="assets/images/gallery-image8.png" alt="Gallery Image 8"></a>
-    <a href="assets/images/gallery-image9.png" class="pure-css-gallery-item gi-9 artists glightbox"><img src="assets/images/gallery-image9.png" alt="Gallery Image 9"></a>
-    <a href="assets/images/gallery-image10.png" class="pure-css-gallery-item gi-10 behind-scenes glightbox"><img src="assets/images/gallery-image10.png" alt="Gallery Image 10"></a>
-    <a href="assets/images/gallery-image11.png" class="pure-css-gallery-item gi-11 achievements glightbox"><img src="assets/images/gallery-image11.png" alt="Gallery Image 11"></a>
-    <a href="assets/images/gallery-image12.png" class="pure-css-gallery-item gi-12 events glightbox"><img src="assets/images/gallery-image12.png" alt="Gallery Image 12"></a>
-    <a href="assets/images/gallery-image13.png" class="pure-css-gallery-item gi-13 workshops glightbox"><img src="assets/images/gallery-image13.png" alt="Gallery Image 13"></a>
-    <a href="assets/images/gallery-image14.png" class="pure-css-gallery-item gi-14 community glightbox"><img src="assets/images/gallery-image14.png" alt="Gallery Image 14"></a>
-    <a href="assets/images/gallery-image15.png" class="pure-css-gallery-item gi-15 artists glightbox"><img src="assets/images/gallery-image15.png" alt="Gallery Image 15"></a>
-    <a href="assets/images/gallery-image16.png" class="pure-css-gallery-item gi-16 behind-scenes glightbox"><img src="assets/images/gallery-image16.png" alt="Gallery Image 16"></a>
-</div>
-<!-- Load More Button -->
+                <a href="assets/images/gallery-image1.png" class="pure-css-gallery-item gi-1 workshops glightbox"><img
+                        src="assets/images/gallery-image1.png" alt="Gallery Image 1"></a>
+                <a href="assets/images/gallery-image2.png" class="pure-css-gallery-item gi-2 community glightbox"><img
+                        src="assets/images/gallery-image2.png" alt="Gallery Image 2"></a>
+                <a href="assets/images/gallery-image3.png" class="pure-css-gallery-item gi-3 artists glightbox"><img
+                        src="assets/images/gallery-image3.png" alt="Gallery Image 3"></a>
+                <a href="assets/images/gallery-image4.png"
+                    class="pure-css-gallery-item gi-4 behind-scenes glightbox"><img
+                        src="assets/images/gallery-image4.png" alt="Gallery Image 4"></a>
+                <a href="assets/images/gallery-image5.png"
+                    class="pure-css-gallery-item gi-5 achievements glightbox"><img
+                        src="assets/images/gallery-image5.png" alt="Gallery Image 5"></a>
+                <a href="assets/images/gallery-image6.png" class="pure-css-gallery-item gi-6 events glightbox"><img
+                        src="assets/images/gallery-image6.png" alt="Gallery Image 6"></a>
+                <a href="assets/images/gallery-image7.png" class="pure-css-gallery-item gi-7 workshops glightbox"><img
+                        src="assets/images/gallery-image7.png" alt="Gallery Image 7"></a>
+                <a href="assets/images/gallery-image8.png" class="pure-css-gallery-item gi-8 community glightbox"><img
+                        src="assets/images/gallery-image8.png" alt="Gallery Image 8"></a>
+                <a href="assets/images/gallery-image9.png" class="pure-css-gallery-item gi-9 artists glightbox"><img
+                        src="assets/images/gallery-image9.png" alt="Gallery Image 9"></a>
+                <a href="assets/images/gallery-image10.png"
+                    class="pure-css-gallery-item gi-10 behind-scenes glightbox"><img
+                        src="assets/images/gallery-image10.png" alt="Gallery Image 10"></a>
+                <a href="assets/images/gallery-image11.png"
+                    class="pure-css-gallery-item gi-11 achievements glightbox"><img
+                        src="assets/images/gallery-image11.png" alt="Gallery Image 11"></a>
+                <a href="assets/images/gallery-image12.png" class="pure-css-gallery-item gi-12 events glightbox"><img
+                        src="assets/images/gallery-image12.png" alt="Gallery Image 12"></a>
+                <a href="assets/images/gallery-image13.png" class="pure-css-gallery-item gi-13 workshops glightbox"><img
+                        src="assets/images/gallery-image13.png" alt="Gallery Image 13"></a>
+                <a href="assets/images/gallery-image14.png" class="pure-css-gallery-item gi-14 community glightbox"><img
+                        src="assets/images/gallery-image14.png" alt="Gallery Image 14"></a>
+                <a href="assets/images/gallery-image15.png" class="pure-css-gallery-item gi-15 artists glightbox"><img
+                        src="assets/images/gallery-image15.png" alt="Gallery Image 15"></a>
+                <a href="assets/images/gallery-image16.png"
+                    class="pure-css-gallery-item gi-16 behind-scenes glightbox"><img
+                        src="assets/images/gallery-image16.png" alt="Gallery Image 16"></a>
+            </div>
+            <!-- Load More Button -->
             <div class="row mt-5">
                 <div class="col-12 text-center">
                     <a href="#" class="btn btn-primary-pill px-5 py-3 fs-6">Load More Photos <i
@@ -395,7 +556,7 @@
 
     <!-- GLightbox JS -->
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
-    
+
 </body>
 
 </html>
