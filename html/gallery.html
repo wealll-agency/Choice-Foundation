@@ -26,6 +26,43 @@
     <link rel="stylesheet" href="assets/css/style.css?v=1790341839800">
     <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <style id="gallery-hotfix">
+    /* HOTFIX FOR BROWSER CACHING */
+    .grid-sizer, .gallery-item {
+      width: 20% !important;
+      padding: 8px !important;
+      float: left !important;
+    }
+    .gallery-item-wide {
+      width: 40% !important;
+    }
+    @media (max-width: 767px) {
+      .grid-sizer, .gallery-item { width: 50% !important; }
+      .gallery-item-wide { width: 100% !important; }
+    }
+    @media (max-width: 575px) {
+      .grid-sizer, .gallery-item, .gallery-item-wide { width: 100% !important; }
+    }
+    .gallery-item a {
+      display: block !important;
+      width: 100% !important;
+      border-radius: 12px !important;
+      overflow: hidden !important;
+      position: relative !important;
+      background: #f8f9fa !important;
+    }
+    .gallery-item img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
+    }
+    .ar-standard a { aspect-ratio: 1 / 1.2 !important; }
+    .ar-wide a { aspect-ratio: 2 / 1.2 !important; }
+    .ar-tall a { aspect-ratio: 1 / 1.8 !important; }
+    .ar-short a { aspect-ratio: 1 / 0.9 !important; }
+    </style>
 </head>
 
 <body>
