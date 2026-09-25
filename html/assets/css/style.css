@@ -2841,8 +2841,8 @@ a {
 }
 
 @media (max-width: 991px) {
-  .grid-sizer, .gallery-item { width: 33.333%; }
-  .gallery-item-wide { width: 66.666%; }
+  
+  
 
   .section-title {
     font-size: 2.8rem;
@@ -3030,8 +3030,8 @@ a {
 }
 
 @media (max-width: 767px) {
-  .grid-sizer, .gallery-item { width: 40%; }
-  .gallery-item-wide { width: 100%; }
+  
+  
 
   .section-title {
     font-size: 2rem;
@@ -3257,3 +3257,11 @@ a {
 /* Custom Heights for variation like mockup */
 .ar-tall a { aspect-ratio: 1 / 1.8; }
 .ar-short a { aspect-ratio: 1 / 0.9; }
+
+@media (max-width: 767px) {
+  .grid-sizer, .gallery-item { width: 50% !important; }
+  .gallery-item-wide { width: 100% !important; }
+}
+@media (max-width: 575px) {
+  .grid-sizer, .gallery-item, .gallery-item-wide { width: 100% !important; }
+}
