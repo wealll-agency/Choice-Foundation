@@ -397,7 +397,7 @@
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const galleryGrid = document.querySelector('#galleryGrid');
+            const galleryGrid = document.querySelector('.pure-css-gallery-grid') || document.querySelector('#galleryGrid');
             if (galleryGrid) {
                 // Isotope is no longer used. Native CSS Grid handles the layout.
                 
