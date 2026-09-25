@@ -27,41 +27,92 @@
     <!-- GLightbox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
-    <style id="gallery-hotfix">
-    /* HOTFIX FOR BROWSER CACHING */
-    .grid-sizer, .gallery-item {
-      width: 20% !important;
-      padding: 8px !important;
-      float: left !important;
+    
+    <style id="gallery-css-grid">
+    .pure-css-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: 24vw; /* Approximate 1:1.2 aspect ratio based on 20% width */
+      gap: 16px;
+      margin-bottom: 40px;
     }
-    .gallery-item-wide {
-      width: 40% !important;
+    @media (min-width: 1200px) {
+       .pure-css-gallery-grid { grid-auto-rows: 280px; }
+    }
+    .pure-css-gallery-item {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f8f9fa;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .pure-css-gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .pure-css-gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    
+    /* Layout Mapping */
+    .gi-1 { grid-column: 1 / 2; grid-row: 1 / 2; }
+    .gi-2 { grid-column: 2 / 3; grid-row: 1 / 2; }
+    .gi-3 { grid-column: 3 / 5; grid-row: 1 / 2; }
+    .gi-4 { grid-column: 5 / 6; grid-row: 1 / 2; }
+
+    .gi-5 { grid-column: 1 / 3; grid-row: 2 / 3; }
+    .gi-6 { grid-column: 3 / 4; grid-row: 2 / 3; }
+    .gi-7 { grid-column: 4 / 5; grid-row: 2 / 4; } /* Tall */
+    .gi-8 { grid-column: 5 / 6; grid-row: 2 / 3; }
+
+    .gi-9 { grid-column: 1 / 2; grid-row: 3 / 4; }
+    .gi-10 { grid-column: 2 / 4; grid-row: 3 / 4; }
+    .gi-11 { grid-column: 5 / 6; grid-row: 3 / 4; }
+
+    .gi-12 { grid-column: 1 / 3; grid-row: 4 / 5; }
+    .gi-13 { grid-column: 3 / 5; grid-row: 4 / 5; }
+    .gi-14 { grid-column: 5 / 6; grid-row: 4 / 5; }
+    
+    .gi-15 { grid-column: 1 / 4; grid-row: 5 / 6; }
+    .gi-16 { grid-column: 4 / 6; grid-row: 5 / 6; }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .pure-css-gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 40vw;
+      }
+      .gi-1 { grid-column: 1/2; grid-row: 1/2; }
+      .gi-2 { grid-column: 2/3; grid-row: 1/2; }
+      .gi-3 { grid-column: 3/4; grid-row: 1/2; }
+      .gi-4 { grid-column: 1/2; grid-row: 2/3; }
+      .gi-5 { grid-column: 2/4; grid-row: 2/3; }
+      .gi-6 { grid-column: 1/2; grid-row: 3/4; }
+      .gi-7 { grid-column: 2/3; grid-row: 3/5; }
+      .gi-8 { grid-column: 3/4; grid-row: 3/4; }
+      .gi-9 { grid-column: 1/2; grid-row: 4/5; }
+      .gi-10 { grid-column: 3/4; grid-row: 4/5; }
+      .gi-11 { grid-column: 1/3; grid-row: 5/6; }
+      .gi-12 { grid-column: 3/4; grid-row: 5/6; }
+      .gi-13 { grid-column: 1/3; grid-row: 6/7; }
+      .gi-14 { grid-column: 3/4; grid-row: 6/7; }
+      .gi-15 { grid-column: 1/2; grid-row: 7/8; }
+      .gi-16 { grid-column: 2/4; grid-row: 7/8; }
     }
     @media (max-width: 767px) {
-      .grid-sizer, .gallery-item { width: 50% !important; }
-      .gallery-item-wide { width: 100% !important; }
+      .pure-css-gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        aspect-ratio: auto;
+      }
+      .pure-css-gallery-item { aspect-ratio: 1.2 / 1; }
+      .pure-css-gallery-grid > * { grid-column: 1 / -1 !important; grid-row: auto !important; }
     }
-    @media (max-width: 575px) {
-      .grid-sizer, .gallery-item, .gallery-item-wide { width: 100% !important; }
-    }
-    .gallery-item a {
-      display: block !important;
-      width: 100% !important;
-      border-radius: 12px !important;
-      overflow: hidden !important;
-      position: relative !important;
-      background: #f8f9fa !important;
-    }
-    .gallery-item img {
-      width: 100% !important;
-      height: 100% !important;
-      object-fit: cover !important;
-      display: block !important;
-    }
-    .ar-standard a { aspect-ratio: 1 / 1.2 !important; }
-    .ar-wide a { aspect-ratio: 2 / 1.2 !important; }
-    .ar-tall a { aspect-ratio: 1 / 1.8 !important; }
-    .ar-short a { aspect-ratio: 1 / 0.9 !important; }
     </style>
 </head>
 
@@ -208,83 +259,25 @@
             </div>
 
             <!-- Gallery Grid -->
-            <div class="custom-isotope-grid" id="galleryGrid">
-                <!-- Sizer -->
-                <div class="grid-sizer"></div>
-
-                <!-- ROW 1 -->
-                <div class="gallery-item ar-standard artists">
-                    <a href="assets/images/gallery-image1.png" class="glightbox"><img
-                            src="assets/images/gallery-image1.png" alt="Gallery Image 1" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-standard workshops">
-                    <a href="assets/images/gallery-image2.png" class="glightbox"><img
-                            src="assets/images/gallery-image2.png" alt="Gallery Image 2" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item gallery-item-wide ar-wide events achievements">
-                    <a href="assets/images/gallery-image3.png" class="glightbox"><img
-                            src="assets/images/gallery-image3.png" alt="Gallery Image 3" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-standard behind-scenes">
-                    <a href="assets/images/gallery-image4.png" class="glightbox"><img
-                            src="assets/images/gallery-image4.png" alt="Gallery Image 4" class="img-fluid w-100"></a>
-                </div>
-
-                <!-- ROW 2 -->
-                <div class="gallery-item gallery-item-wide ar-wide community">
-                    <a href="assets/images/gallery-image5.png" class="glightbox"><img
-                            src="assets/images/gallery-image5.png" alt="Gallery Image 5" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-standard artists">
-                    <a href="assets/images/gallery-image6.png" class="glightbox"><img
-                            src="assets/images/gallery-image6.png" alt="Gallery Image 6" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-tall events">
-                    <a href="assets/images/gallery-image7.png" class="glightbox"><img
-                            src="assets/images/gallery-image7.png" alt="Gallery Image 7" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-short workshops">
-                    <a href="assets/images/gallery-image8.png" class="glightbox"><img
-                            src="assets/images/gallery-image8.png" alt="Gallery Image 8" class="img-fluid w-100"></a>
-                </div>
-
-                <!-- ROW 3 -->
-                <div class="gallery-item ar-standard behind-scenes">
-                    <a href="assets/images/gallery-image9.png" class="glightbox"><img
-                            src="assets/images/gallery-image9.png" alt="Gallery Image 9" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item gallery-item-wide ar-wide achievements">
-                    <a href="assets/images/gallery-image10.png" class="glightbox"><img
-                            src="assets/images/gallery-image10.png" alt="Gallery Image 10" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-standard artists">
-                    <a href="assets/images/gallery-image11.png" class="glightbox"><img
-                            src="assets/images/gallery-image11.png" alt="Gallery Image 11" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-standard workshops">
-                    <a href="assets/images/gallery-image12.png" class="glightbox"><img
-                            src="assets/images/gallery-image12.png" alt="Gallery Image 12" class="img-fluid w-100"></a>
-                </div>
-
-                <!-- ROW 4 -->
-                <div class="gallery-item gallery-item-wide ar-wide events">
-                    <a href="assets/images/gallery-image13.png" class="glightbox"><img
-                            src="assets/images/gallery-image13.png" alt="Gallery Image 13" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-standard artists">
-                    <a href="assets/images/gallery-image14.png" class="glightbox"><img
-                            src="assets/images/gallery-image14.png" alt="Gallery Image 14" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-standard behind-scenes">
-                    <a href="assets/images/gallery-image15.png" class="glightbox"><img
-                            src="assets/images/gallery-image15.png" alt="Gallery Image 15" class="img-fluid w-100"></a>
-                </div>
-                <div class="gallery-item ar-standard community">
-                    <a href="assets/images/gallery-image16.png" class="glightbox"><img
-                            src="assets/images/gallery-image16.png" alt="Gallery Image 16" class="img-fluid w-100"></a>
-                </div>
-            </div>
-            <!-- Load More Button -->
+            <div class="pure-css-gallery-grid">
+    <a href="assets/images/gallery-image1.png" class="pure-css-gallery-item gi-1 glightbox"><img src="assets/images/gallery-image1.png" alt="Gallery Image 1"></a>
+    <a href="assets/images/gallery-image2.png" class="pure-css-gallery-item gi-2 glightbox"><img src="assets/images/gallery-image2.png" alt="Gallery Image 2"></a>
+    <a href="assets/images/gallery-image3.png" class="pure-css-gallery-item gi-3 glightbox"><img src="assets/images/gallery-image3.png" alt="Gallery Image 3"></a>
+    <a href="assets/images/gallery-image4.png" class="pure-css-gallery-item gi-4 glightbox"><img src="assets/images/gallery-image4.png" alt="Gallery Image 4"></a>
+    <a href="assets/images/gallery-image5.png" class="pure-css-gallery-item gi-5 glightbox"><img src="assets/images/gallery-image5.png" alt="Gallery Image 5"></a>
+    <a href="assets/images/gallery-image6.png" class="pure-css-gallery-item gi-6 glightbox"><img src="assets/images/gallery-image6.png" alt="Gallery Image 6"></a>
+    <a href="assets/images/gallery-image7.png" class="pure-css-gallery-item gi-7 glightbox"><img src="assets/images/gallery-image7.png" alt="Gallery Image 7"></a>
+    <a href="assets/images/gallery-image8.png" class="pure-css-gallery-item gi-8 glightbox"><img src="assets/images/gallery-image8.png" alt="Gallery Image 8"></a>
+    <a href="assets/images/gallery-image9.png" class="pure-css-gallery-item gi-9 glightbox"><img src="assets/images/gallery-image9.png" alt="Gallery Image 9"></a>
+    <a href="assets/images/gallery-image10.png" class="pure-css-gallery-item gi-10 glightbox"><img src="assets/images/gallery-image10.png" alt="Gallery Image 10"></a>
+    <a href="assets/images/gallery-image11.png" class="pure-css-gallery-item gi-11 glightbox"><img src="assets/images/gallery-image11.png" alt="Gallery Image 11"></a>
+    <a href="assets/images/gallery-image12.png" class="pure-css-gallery-item gi-12 glightbox"><img src="assets/images/gallery-image12.png" alt="Gallery Image 12"></a>
+    <a href="assets/images/gallery-image13.png" class="pure-css-gallery-item gi-13 glightbox"><img src="assets/images/gallery-image13.png" alt="Gallery Image 13"></a>
+    <a href="assets/images/gallery-image14.png" class="pure-css-gallery-item gi-14 glightbox"><img src="assets/images/gallery-image14.png" alt="Gallery Image 14"></a>
+    <a href="assets/images/gallery-image15.png" class="pure-css-gallery-item gi-15 glightbox"><img src="assets/images/gallery-image15.png" alt="Gallery Image 15"></a>
+    <a href="assets/images/gallery-image16.png" class="pure-css-gallery-item gi-16 glightbox"><img src="assets/images/gallery-image16.png" alt="Gallery Image 16"></a>
+</div>
+<!-- Load More Button -->
             <div class="row mt-5">
                 <div class="col-12 text-center">
                     <a href="#" class="btn btn-primary-pill px-5 py-3 fs-6">Load More Photos <i
@@ -408,7 +401,7 @@
             if (galleryGrid) {
                 // Initialize Isotope after images are loaded
                 imagesLoaded(galleryGrid, function () {
-                    var iso = new Isotope(galleryGrid, {
+                    // var iso = new Isotope(galleryGrid, {
                         itemSelector: '.gallery-item',
                         layoutMode: 'masonry',
                         masonry: {
