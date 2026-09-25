@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    CSS Variables & Base
    ========================================================================== */
 :root {
@@ -1581,7 +1581,6 @@ a {
 
 /* Responsive fixes for grid */
 
-
 /* ==========================================================================
    Our Reach Section
    ========================================================================== */
@@ -1629,11 +1628,6 @@ a {
 /* ==========================================================================
    Responsive Utilities for New Sections
    ========================================================================== */
-
-
-
-
-
 
 /* ==========================================================================
    Gallery Section
@@ -1818,9 +1812,6 @@ a {
   color: var(--color-navy) !important;
 }
 
-
-
-
 /* ==========================================================================
    About Hero Section
    ========================================================================== */
@@ -1858,8 +1849,6 @@ a {
     rgba(10, 25, 47, 0) 100%
   );
 }
-
-
 
 /* Mission Section Styles */
 .mission-section {
@@ -1921,9 +1910,7 @@ a {
 
 /* Responsive Overrides */
 
-
 /* Additional Mobile Adjustments */
-
 
 /* ==========================================================================
    Extracted Inline Styles
@@ -2438,14 +2425,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
 /* ==========================================================================
    CONTACT PAGE STYLES
    ========================================================================== */
@@ -2574,8 +2553,6 @@ a {
 
 /* Responsive adjustments */
 
-
-
 /* Contact Page Specific Elements (Refactored Inline Styles) */
 .contact-hero-bg-layer {
   background-image: url("../images/contact-hero-bg.png");
@@ -2627,7 +2604,6 @@ a {
   }
 }
 
-
 @media (max-width: 1199px) {
   .custom-artist-grid {
     grid-template-columns: 1fr;
@@ -2667,7 +2643,6 @@ a {
     gap: 20px;
   }
 }
-
 
 @media (max-width: 991px) {
   .section-title {
@@ -2855,7 +2830,6 @@ a {
   }
 }
 
-
 @media (max-width: 767px) {
   .section-title {
     font-size: 2rem;
@@ -3017,6 +2991,13 @@ a {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
   }
+  .display-heading {
+    font-size: 3rem;
+  }
+  .contact-hero-title {
+    font-size: 3rem;
+  }
+
   .mission-section h2 {
     font-size: 2.5rem !important;
   }
@@ -3050,4 +3031,3 @@ a {
     font-size: 0.8rem;
   }
 }
-
