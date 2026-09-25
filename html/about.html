@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Foundation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================================
+         HEADER
+    =============================================== -->
+    <header class="site-header">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row align-items-center justify-content-between header-row">
+
+                <!-- Logo Area -->
+                <div class="col-auto">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo.png" alt="Choice Foundation Logo">
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-auto d-none d-lg-block">
+                    <nav class="main-navigation">
+                        <ul class="nav-list">
+                            <li><a href="#" class="nav-link active">Home</a></li>
+                            <li><a href="#" class="nav-link">About</a></li>
+                            <li><a href="#" class="nav-link">Members</a></li>
+                            <li><a href="#" class="nav-link">Franchise</a></li>
+                            <li><a href="#" class="nav-link">Events</a></li>
+                            <li><a href="#" class="nav-link">Gallery</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Actions -->
+                <div class="col-auto d-flex align-items-center">
+                    <button class="search-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="#" class="btn btn-primary-pill ms-4 d-none d-sm-inline-flex">Join the Community <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <button class="mobile-menu-btn d-lg-none ms-3"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ==============================================
+         SEARCH OVERLAY
+    =============================================== -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="search-close-btn" id="searchCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" class="search-form">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-submit-btn"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         MOBILE MENU OVERLAY
+    =============================================== -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <button class="mobile-menu-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-list">
+                <li><a href="#" class="mobile-nav-link active">Home</a></li>
+                <li><a href="#" class="mobile-nav-link">About</a></li>
+                <li><a href="#" class="mobile-nav-link">Members</a></li>
+                <li><a href="#" class="mobile-nav-link">Franchise</a></li>
+                <li><a href="#" class="mobile-nav-link">Events</a></li>
+                <li><a href="#" class="mobile-nav-link">Gallery</a></li>
+                <li><a href="#" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary-pill mt-5 w-100 text-center justify-content-center">Join the
+                Community</a>
+        </div>
+    </div>
+
+
+
+    <!-- ==============================================
+         ABOUT HERO SECTION
+    =============================================== -->
+    <section class="about-hero position-relative">
+        <div class="about-hero-bg-layer" style="background-image: url('assets/images/about-hero-bg.jpg');"></div>
+        <div class="about-hero-gradient-overlay hero-overlay-gradient"
+            >
+        </div>
+
+        <div class="container position-relative z-3 hero-container" >
+            <div class="row w-100">
+                <div class="col-lg-6 col-xl-5 py-5">
+                    <h6 class="text-uppercase fw-bold tracking-wide mb-3 text-white opacity-75 hero-eyebrow"
+                        >About Choice Foundation</h6>
+                    <h1 class="text-white font-serif mb-4 fw-bold hero-title-main" >
+                        A Community<br>
+                        That Celebrates<br>
+                        <span class="text-maroon">Beauty & Artistry</span>
+                    </h1>
+                    <p class="text-white opacity-75 mb-5 hero-subtitle"
+                        >
+                        Choice Foundation brings together makeup artists, beauty professionals and creative talent
+                        through events, collaborations and opportunities &mdash; creating a stronger, more connected
+                        beauty community across West Bengal and selected parts of Jharkhand.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#" class="btn btn-primary-pill btn-padding-lg" >Our Story <i
+                                class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="#" class="btn btn-outline-white-pill btn-padding-lg" >Meet Our Members</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-7 position-relative d-none d-lg-block">
+                    <!-- Right floating text overlay -->
+                    <div class="position-absolute text-white hero-floating-text"
+                        >
+                        People<br>
+                        Artistry<br>
+                        Community<br>
+                        Opportunities
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         OUR STORY SECTION
+    =============================================== -->
+    <section class="our-story-section py-5 position-relative bg-white section-padding-lg"
+        >
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Image Cluster -->
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                    <div class="position-relative story-img-container"
+                        >
+
+                        <!-- Leaf bg top-left -->
+                        <!-- mix-blend-mode: multiply makes the white background of the jpg/png transparent against the background -->
+                        <img src="assets/images/about-leaf-bg.png" class="position-absolute leaf-bg-top"
+                            
+                            alt="">
+
+                        <!-- Navy square -->
+                        <div class="position-absolute bg-navy story-navy-box"
+                            ></div>
+
+                        <!-- B&W Image (Left) -->
+                        <img src="assets/images/about-image1.png" class="position-absolute shadow-lg story-img-bw"
+                            
+                            alt="">
+
+                        <!-- Color Image (Right) -->
+                        <img src="assets/images/about-image2.png" class="position-absolute shadow-lg story-img-color"
+                            
+                            alt="">
+
+                        <!-- Maroon Quote Box (Bottom Left) -->
+                        <div class="position-absolute bg-maroon text-white p-4 shadow-lg story-quote-box"
+                            >
+                            <div class="quote-icon-large"
+                                >
+                                &#8220;</div>
+                            <p class="font-serif fw-bold mb-3 quote-text" >Beauty creates
+                                confidence,<br>confidence creates<br>opportunities.</p>
+                            <div class="quote-divider" ></div>
+                        </div>
+
+                        <!-- Leaf bg bottom-right -->
+                        <img src="assets/images/about-leaf-bg.png" class="position-absolute leaf-bg-bottom"
+                            
+                            alt="">
+                    </div>
+                </div>
+
+                <!-- Right Content Area -->
+                <div class="col-lg-6 ps-lg-5 mt-5 mt-lg-0">
+                    <h6 class="text-uppercase fw-bold tracking-wide mb-3 eyebrow-heading"
+                        >Our Story</h6>
+                    <h2 class="text-navy font-serif fw-bold mb-4 section-title-sm" >
+                        More Than Events.<br>A Community of Artistry.
+                    </h2>
+                    <p class="text-muted mb-5 section-desc-sm" >
+                        Choice Foundation was created with a simple belief &mdash; that beauty has the power to inspire,
+                        connect and create opportunities. We bring together talented makeup artists, beauty
+                        professionals and creative individuals through events, collaborations and community initiatives,
+                        helping them grow, get recognised and be part of a stronger ecosystem.
+                    </p>
+
+                    <!-- Features Grid (Horizontal Row) -->
+                    <div class="row g-4 mt-2 max-w-600" >
+                        <!-- Feature 1 -->
+                        <div class="col-4 text-center">
+                            <div class="feature-icon-circle bg-navy text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm mx-auto icon-circle-md"
+                                >
+                                <i class="fa-solid fa-users fs-5"></i>
+                            </div>
+                            <h5 class="text-navy fw-bold mb-2 feature-title" >People First</h5>
+                            <p class="text-muted m-0 feature-desc" >A
+                                supportive<br>community for artists<br>and professionals.</p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="col-4 text-center">
+                            <div class="feature-icon-circle bg-maroon text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm mx-auto icon-circle-md"
+                                >
+                                <i class="fa-solid fa-spa fs-5"></i>
+                            </div>
+                            <h5 class="text-navy fw-bold mb-2 feature-title" >Meaningful Events</h5>
+                            <p class="text-muted m-0 feature-desc" >Platforms to
+                                showcase<br>talent and create<br>real opportunities.</p>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="col-4 text-center">
+                            <div class="feature-icon-circle bg-green text-white d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow-sm mx-auto icon-circle-md"
+                                >
+                                <i class="fa-regular fa-gem fs-5"></i>
+                            </div>
+                            <h5 class="text-navy fw-bold mb-2 feature-title" >A Brighter Future</h5>
+                            <p class="text-muted m-0 feature-desc" >Empowering the
+                                next<br>generation of beauty<br>professionals.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         OUR MISSION SECTION
+    =============================================== -->
+    <section class="mission-section position-relative bg-navy overflow-hidden">
+        <!-- Background Image & Gradient -->
+        <div class="mission-bg-image position-absolute"></div>
+        <div class="mission-gradient-overlay position-absolute w-100 h-100 top-0 start-0"></div>
+
+        <div class="container position-relative z-index-2" >
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-6 col-md-12 py-5 my-lg-5 position-relative z-3 our-mission-text">
+                    <h6 class="text-uppercase fw-bold tracking-wide mb-3 eyebrow-heading"
+                        >Our Mission</h6>
+                    <h2 class="text-white font-serif fw-bold mb-4 display-heading" >
+                        Empowering Artists.<br>Building Opportunities.
+                    </h2>
+                    <div class="section-divider" ></div>
+                    <p class="text-white opacity-75 mb-5 section-desc-lg"
+                        >
+                        We aim to create meaningful platforms for makeup artists and beauty professionals, where they
+                        can learn, collaborate, participate in events and gain recognition &mdash; helping to build a
+                        stronger beauty community across West Bengal and selected parts of Jharkhand.
+                    </p>
+                    <a href="#" class="btn btn-primary-pill btn-mission"
+                        >Our Mission &
+                        Vision <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                </div>
+
+                <!-- Floating Script Text -->
+                <div class="col-lg-6 d-none d-lg-block position-relative z-3 mission-script-container" >
+                    <div class="position-absolute mission-script-text"
+                        >
+                        <div class="ml-60" >Learn</div>
+                        <div class="ml-20" >Connect</div>
+                        <div class="ml-40-relative" >
+                            <span class="position-absolute script-plus-top-left"
+                                >+</span>
+                            Grow
+                        </div>
+                        <div class="ml-0-relative" >
+                            Be Recognised
+                            <span class="position-absolute script-plus-top-right"
+                                >+</span>
+                        </div>
+                        <span class="position-absolute script-plus-bottom"
+                            >+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         OUR VALUES SECTION
+    =============================================== -->
+    <section class="values-section py-5 bg-white position-relative overflow-hidden section-padding-md"
+        >
+        <!-- Leaf bg bottom-left -->
+        <img src="assets/images/about-leaf-bg.png" class="position-absolute leaf-bg-values-left"
+            
+            alt="">
+        <!-- Leaf bg top-right -->
+        <img src="assets/images/about-leaf-bg.png" class="position-absolute leaf-bg-values-right"
+            
+            alt="">
+
+        <div class="container position-relative z-1">
+            <!-- Header Row -->
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h6 class="text-uppercase fw-bold tracking-wide mb-3 eyebrow-heading"
+                        >Our Values</h6>
+                    <h2 class="text-navy font-serif fw-bold mb-0 section-title-sm" >
+                        What We Stand For
+                    </h2>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <p class="text-muted mb-0 section-desc" >
+                        Our values guide everything we do &mdash; from the events we create to the community we build.
+                        At Choice Foundation, we believe in the power of people, creativity and collaboration.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="row g-4 mt-2">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card shadow-sm h-100 border-0 position-relative">
+                        <div class="position-relative">
+                            <img src="assets/images/value-image1.png" alt="Community" class="value-img-top">
+                            <!-- Icon -->
+                            <div class="value-icon-wrapper position-absolute shadow bg-navy-dark" >
+                                <i class="fa-solid fa-users text-white fs-6"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 pt-5">
+                            <h4 class="text-navy font-serif fw-bold mb-2 fs-5">Community</h4>
+                            <p class="text-muted mb-0 card-desc" >Bringing people
+                                together through shared passion.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card shadow-sm h-100 border-0 position-relative">
+                        <div class="position-relative">
+                            <img src="assets/images/value-image2.png" alt="Opportunities" class="value-img-top">
+                            <!-- Icon -->
+                            <div class="value-icon-wrapper position-absolute shadow bg-maroon-light" >
+                                <i class="fa-solid fa-graduation-cap text-white fs-6"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 pt-5">
+                            <h4 class="text-navy font-serif fw-bold mb-2 fs-5">Opportunities</h4>
+                            <p class="text-muted mb-0 card-desc" >Creating platforms
+                                for artists to grow and shine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card shadow-sm h-100 border-0 position-relative">
+                        <div class="position-relative">
+                            <img src="assets/images/value-image3.png" alt="Recognition" class="value-img-top">
+                            <!-- Icon -->
+                            <div class="value-icon-wrapper position-absolute shadow bg-green-dark" >
+                                <i class="fa-regular fa-star text-white fs-6"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 pt-5">
+                            <h4 class="text-navy font-serif fw-bold mb-2 fs-5">Recognition</h4>
+                            <p class="text-muted mb-0 card-desc" >Celebrating talent
+                                and individuality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card shadow-sm h-100 border-0 position-relative">
+                        <div class="position-relative">
+                            <img src="assets/images/value-image4.png" alt="Collaboration" class="value-img-top">
+                            <!-- Icon -->
+                            <div class="value-icon-wrapper position-absolute shadow bg-green-darker" >
+                                <i class="fa-solid fa-leaf text-white fs-6"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 pt-5">
+                            <h4 class="text-navy font-serif fw-bold mb-2 fs-5">Collaboration</h4>
+                            <p class="text-muted mb-0 card-desc" >Building a stronger
+                                beauty ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         FOOTER SECTION
+    =============================================== -->
+    <footer class="footer bg-navy text-white pt-100 pb-4 position-relative overflow-hidden border-none" >
+        <div class="container position-relative z-1">
+            <div class="row mb-5">
+                <!-- Column 1 -->
+                <div class="col-lg-3 mb-5 mb-lg-0 pe-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="assets/images/logo.png" alt="Choice Foundation" width="120" class="me-3 footer_logo">
+                        <div>
+
+                        </div>
+                    </div>
+                    <p class="text-white opacity-75 mb-4 footer-text" >
+                        A platform for makeup artists, beauty professionals and event experiences across West Bengal and
+                        selected parts of Jharkhand.
+                    </p>
+                    <div class="d-flex gap-3 social-footer">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4 footer-title" >Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Events </a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4 footer-title" >Support</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="mb-4 text-warning footer-title" >Get in Touch</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fa-solid fa-location-dot mt-1 me-3 text-white"></i>
+                            <span class="text-white opacity-75 footer-link" >Kolkata, West Bengal</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-envelope me-3 text-white"></i>
+                            <a href="mailto:info@choice-foundation.co.in" class="text-white opacity-75 footer-link"
+                                >info@choice-foundation.co.in</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fa-solid fa-phone me-3 text-white"></i>
+                            <span class="text-white opacity-75 footer-link" >+91 98765 43210</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 5 (Cursive Text) -->
+                <div class="col-lg-2 d-none d-lg-block position-relative">
+                    <div class="footer-cursive-right text-white">For A<br>More Beautiful<br>Tomorrow</div>
+                </div>
+            </div>
+
+            <hr class="footer-divider" >
+
+            <div class="position-relative py-2">
+                <div class="text-center w-100 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <p class="text-white opacity-75 m-0 d-flex align-items-center text-uppercase copyright-text"
+                        >
+                        &copy; 2026 Choice Foundation. All Rights Reserved
+                        <span class="mx-2 fw-semibold opacity-90" >AND DEVELOPED BY</span>
+                        <a href="https://wealll.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/Wealll_new.webp" alt="We Alll"
+                                 class="hover-opacity-75 wealll-logo">
+                        </a>
+                    </p>
+                </div>
+                <a href="#"
+                    class="back-to-top d-none d-md-inline-flex position-absolute top-50 translate-middle-y end-0 align-items-center justify-content-center rounded-circle border border-white text-white social-icon"
+                    >
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
