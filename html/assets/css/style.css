@@ -2992,6 +2992,19 @@ a {
   .contact-hero-title .text-maroon {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* extra pop for maroon */
   }
+  .mission-section {
+    padding: 40px 0;
+  }
+  .section-padding-md {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .cta-section {
+    padding: 0 !important;
+  }
+  .cta-bg-layer {
+    background-position: right center;
+  }
 }
 
 /* Contact Page Specific Elements (Refactored Inline Styles) */
