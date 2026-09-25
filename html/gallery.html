@@ -399,29 +399,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             const galleryGrid = document.querySelector('#galleryGrid');
             if (galleryGrid) {
-                // Initialize Isotope after images are loaded
-                imagesLoaded(galleryGrid, function () {
-                    // var iso = new Isotope(galleryGrid, {
-                        itemSelector: '.gallery-item',
-                        layoutMode: 'masonry',
-                        masonry: {
-                            columnWidth: '.grid-sizer'
-                        },
-                        percentPosition: true
-                    });
-
-                    // Filter items on button click
-                    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
-                    filterButtons.forEach(button => {
-                        button.addEventListener('click', function () {
-                            filterButtons.forEach(btn => btn.classList.remove('active'));
-                            this.classList.add('active');
-                            const filterValue = this.getAttribute('data-filter');
-                            iso.arrange({ filter: filterValue });
-                        });
-                    });
-                });
-
+                // Isotope is no longer used. Native CSS Grid handles the layout.
                 // Initialize GLightbox
                 const lightbox = GLightbox({
                     selector: '.glightbox',
