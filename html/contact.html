@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Foundation || Contact US</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================================
+         HEADER
+    =============================================== -->
+    <header class="site-header">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row align-items-center justify-content-between header-row">
+
+                <!-- Logo Area -->
+                <div class="col-auto">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo.png" alt="Choice Foundation Logo">
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-auto d-none d-lg-block">
+                    <nav class="main-navigation">
+                        <ul class="nav-list">
+                            <li><a href="#" class="nav-link active">Home</a></li>
+                            <li><a href="#" class="nav-link">About</a></li>
+                            <li><a href="#" class="nav-link">Members</a></li>
+                            <li><a href="#" class="nav-link">Franchise</a></li>
+                            <li><a href="#" class="nav-link">Events</a></li>
+                            <li><a href="#" class="nav-link">Gallery</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Actions -->
+                <div class="col-auto d-flex align-items-center">
+                    <button class="search-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="#" class="btn btn-primary-pill ms-4 d-none d-sm-inline-flex">Join the Community <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <button class="mobile-menu-btn d-lg-none ms-3"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ==============================================
+         SEARCH OVERLAY
+    =============================================== -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="search-close-btn" id="searchCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" class="search-form">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-submit-btn"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         MOBILE MENU OVERLAY
+    =============================================== -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <button class="mobile-menu-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-list">
+                <li><a href="#" class="mobile-nav-link active">Home</a></li>
+                <li><a href="#" class="mobile-nav-link">About</a></li>
+                <li><a href="#" class="mobile-nav-link">Members</a></li>
+                <li><a href="#" class="mobile-nav-link">Franchise</a></li>
+                <li><a href="#" class="mobile-nav-link">Events</a></li>
+                <li><a href="#" class="mobile-nav-link">Gallery</a></li>
+                <li><a href="#" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary-pill mt-5 w-100 text-center justify-content-center">Join the
+                Community</a>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         CONTACT HERO SECTION
+    =============================================== -->
+    <section class="contact-hero position-relative d-flex align-items-center">
+        <!-- Full Background Image -->
+        <div class="contact-hero-bg-layer"></div>
+
+        <!-- Optional gradient if text legibility is needed (but image seems to have it) -->
+        <div class="contact-hero-overlay position-absolute w-100 h-100 top-0 start-0"></div>
+
+        <div class="container position-relative z-3">
+            <div class="row w-100">
+                <!-- Left Content -->
+                <div class="col-lg-6 col-md-10 py-5 my-5">
+                    <h6 class="text-uppercase fw-bold tracking-wide mb-3 contact-hero-eyebrow">CONTACT US</h6>
+                    <h1 class="text-white font-serif mb-4 display-heading contact-hero-title">
+                        Let's Create<br>
+                        A Brighter<br>
+                        <span class="text-maroon">Tomorrow Together.</span>
+                    </h1>
+                    <div class="contact-hero-divider"></div>
+                    <p class="text-white opacity-75 mb-0 contact-hero-subtitle">
+                        Have a question, collaboration idea or want to be part of our community? We'd love to hear from
+                        you. Reach out to Choice Foundation and let's build a stronger, more empowered beauty community
+                        together.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==============================================
+         CONTACT FORM & INFO SECTION
+    =============================================== -->
+    <section class="contact-info-section py-5 position-relative bg-white section-padding-lg">
+        <!-- Floating Leaf Background (Left) -->
+        <img src="assets/images/about-leaf-bg.png" class="position-absolute contact-leaf-bg" alt="">
+        <!-- Floating Powder Graphic (Right Bottom) -->
+        <img src="assets/images/contact-from-bg.png" class="position-absolute contact-powder-bg" alt="">
+
+        <div class="container position-relative z-3 my-4">
+            <div class="row gx-5">
+                <!-- Left Column: Contact Information -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="pe-lg-4">
+                        <div class="contact-hero-eyebrow mb-3">GET IN TOUCH</div>
+                        <h2 class="text-navy font-serif fw-bold display-heading mb-4">
+                            We're Here<br>
+                            <span class="text-maroon">For You.</span>
+                        </h2>
+                        <div class="contact-hero-divider mb-4"></div>
+                        <p class="text-muted mb-5 pb-2 max-w-500">
+                            Whether you're a makeup artist, beauty professional, event partner, or someone who wants to
+                            know more about our initiatives, our team is here to help.
+                        </p>
+
+                        <!-- Contact Info Cards -->
+                        <div class="d-flex flex-column gap-3">
+                            <!-- Card 1: Location -->
+                            <div class="contact-info-card d-flex align-items-center">
+                                <div
+                                    class="contact-icon-circle bg-maroon text-white d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot fs-5"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h5 class="text-navy font-serif fw-bold mb-1 fs-6">Office Address</h5>
+                                    <p class="text-muted m-0 feature-desc">PRAMOD NAGAR AMRAI<br>DURGAPUR-03</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Phone -->
+                            <div class="contact-info-card d-flex align-items-center">
+                                <div
+                                    class="contact-icon-circle bg-navy text-white d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                    <i class="fa-solid fa-map-location-dot fs-5"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h5 class="text-navy font-serif fw-bold mb-1 fs-6">Branch Office</h5>
+                                    <p class="text-muted m-0 feature-desc" style="font-size: 0.85rem;">Philips Lane, Pasupati Market, Near Bank Of Baroda, Benachity, Durgapur-13</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Email -->
+                            <div class="contact-info-card d-flex align-items-center">
+                                <div
+                                    class="contact-icon-circle bg-maroon text-white d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                    <i class="fa-solid fa-phone fs-5"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h5 class="text-navy font-serif fw-bold mb-1 fs-6">Call Us</h5>
+                                    <p class="text-muted m-0 feature-desc">6295584343 / 8972263758 /<br>7363978811</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Working Hours -->
+                            <div class="contact-info-card d-flex align-items-center">
+                                <div
+                                    class="contact-icon-circle bg-navy text-white d-flex align-items-center justify-content-center rounded-circle flex-shrink-0">
+                                    <i class="fa-regular fa-envelope fs-5"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h5 class="text-navy font-serif fw-bold mb-1 fs-6">Email Us</h5>
+                                    <p class="text-muted m-0 feature-desc" style="font-size: 0.85rem; word-break: break-word;">choicefoundationdgp@gmail.com<br>krisnendu89@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="col-lg-7 position-relative z-3">
+                    <div class="contact-form-card bg-white p-4 p-md-5">
+                        <!-- Form Header -->
+                        <div
+                            class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-5 pb-2">
+                            <h3 class="text-navy font-serif fw-bold mb-3 mb-md-0 fs-2">Send Us a Message</h3>
+                            <div class="d-flex align-items-center form-header-right">
+                                <div class="form-header-line bg-maroon me-3"></div>
+                                <div class="hero-eyebrow mb-0 text-maroon contact-form-eyebrow">WE'D LOVE TO HEAR FROM
+                                    YOU</div>
+                            </div>
+                        </div>
+
+                        <!-- Form -->
+                        <form action="#" class="contact-form">
+                            <div class="row g-4 mb-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-navy contact-form-label mb-2">Your Name <span
+                                            class="text-maroon">*</span></label>
+                                    <input type="text" class="form-control custom-input" placeholder="Enter your name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-navy contact-form-label mb-2">Your Email <span
+                                            class="text-maroon">*</span></label>
+                                    <input type="email" class="form-control custom-input"
+                                        placeholder="Enter your email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-navy contact-form-label mb-2">Phone
+                                        Number</label>
+                                    <input type="tel" class="form-control custom-input"
+                                        placeholder="Enter your phone number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold text-navy contact-form-label mb-2">Subject <span
+                                            class="text-maroon">*</span></label>
+                                    <select class="form-select custom-input">
+                                        <option selected disabled>Select a subject</option>
+                                        <option value="1">General Inquiry</option>
+                                        <option value="2">Partnership</option>
+                                        <option value="3">Membership</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <label class="form-label fw-bold text-navy contact-form-label mb-2">Your Message
+                                        <span class="text-maroon">*</span></label>
+                                    <textarea class="form-control custom-input" rows="5"
+                                        placeholder="Write your message here..."></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary-pill w-100 py-3 mt-2 fs-6">Send Message <i
+                                    class="fa-solid fa-arrow-right ms-2"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- ==============================================
+         MAP SECTION
+    =============================================== -->
+    <section class="map-section w-100 p-0 m-0" style="line-height: 0;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4357.362625509423!2d87.27516100000001!3d23.556685000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f76d5def934c41%3A0xf155140b88c3e2f0!2sChoice%20Foundation!5e1!3m2!1sen!2sin!4v1790331753488!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+
+    <!-- ==============================================
+         FOOTER SECTION
+    =============================================== -->
+    <footer class="footer bg-navy text-white pt-100 pb-4 position-relative overflow-hidden border-none">
+        <div class="container position-relative z-1">
+            <div class="row mb-5">
+                <!-- Column 1 -->
+                <div class="col-lg-3 mb-5 mb-lg-0 pe-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="assets/images/logo.png" alt="Choice Foundation" width="120" class="me-3 footer_logo">
+                        <div>
+
+                        </div>
+                    </div>
+                    <p class="text-white opacity-75 mb-4 footer-text">
+                        A platform for makeup artists, beauty professionals and event experiences across West Bengal and
+                        selected parts of Jharkhand.
+                    </p>
+                    <div class="d-flex gap-3 social-footer">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4 footer-title">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Events </a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4 footer-title">Support</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="mb-4 text-warning footer-title">Get in Touch</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fa-solid fa-location-dot mt-1 me-3 text-white"></i>
+                            <span class="text-white opacity-75 footer-link">Kolkata, West Bengal</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-envelope me-3 text-white"></i>
+                            <a href="mailto:info@choice-foundation.co.in"
+                                class="text-white opacity-75 footer-link">info@choice-foundation.co.in</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fa-solid fa-phone me-3 text-white"></i>
+                            <span class="text-white opacity-75 footer-link">+91 98765 43210</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 5 (Cursive Text) -->
+                <div class="col-lg-2 d-none d-lg-block position-relative">
+                    <div class="footer-cursive-right text-white">For A<br>More Beautiful<br>Tomorrow</div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="position-relative py-2">
+                <div class="text-center w-100 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <p class="text-white opacity-75 m-0 d-flex align-items-center text-uppercase copyright-text">
+                        &copy; 2026 Choice Foundation. All Rights Reserved
+                        <span class="mx-2 fw-semibold opacity-90">AND DEVELOPED BY</span>
+                        <a href="https://wealll.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/Wealll_new.webp" alt="We Alll" class="hover-opacity-75 wealll-logo">
+                        </a>
+                    </p>
+                </div>
+                <a href="#"
+                    class="back-to-top d-none d-md-inline-flex position-absolute top-50 translate-middle-y end-0 align-items-center justify-content-center rounded-circle border border-white text-white social-icon">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
