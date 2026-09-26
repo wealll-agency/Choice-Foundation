@@ -205,13 +205,85 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
     });
+  }
 
-    // Initialize GLightbox
+  // Initialize GLightbox Globally
+  if (typeof GLightbox !== 'undefined') {
     const lightbox = GLightbox({
       selector: ".glightbox",
       touchNavigation: true,
       loop: true,
       autoplayVideos: true,
     });
+  }
+  // ==========================================
+  // Members Page Filtering & Search Logic
+  // ==========================================
+  const memberGrid = document.querySelector(".member-grid");
+  if (memberGrid) {
+    const memberFilters = document.querySelectorAll(".btn-member-filter");
+    const memberItems = document.querySelectorAll(".member-item");
+    const memberSearchInput = document.getElementById("memberSearchInput");
+
+    function filterMembers() {
+      // 1. Get current active filter category
+      const activeFilterBtn = document.querySelector(
+        ".btn-member-filter.active",
+      );
+      const category = activeFilterBtn
+        ? activeFilterBtn.getAttribute("data-filter")
+        : "*";
+
+      // 2. Get search query
+      const searchQuery = memberSearchInput
+        ? memberSearchInput.value.toLowerCase().trim()
+        : "";
+
+      memberItems.forEach((item) => {
+        // Initial animation state
+        item.style.transition = "all 0.4s ease";
+
+        // Match category
+        const matchCategory =
+          category === "*" ||
+          item.classList.contains(category.replace(".", ""));
+
+        // Match search
+        const nameEl = item.querySelector(".member-name");
+        const name = nameEl ? nameEl.textContent.toLowerCase() : "";
+        const matchSearch = name.includes(searchQuery);
+
+        if (matchCategory && matchSearch) {
+          // Show item
+          item.style.display = "block";
+          void item.offsetWidth; // Force reflow
+          item.style.transform = "scale(1)";
+          item.style.opacity = "1";
+        } else {
+          // Hide item
+          item.style.transform = "scale(0.8)";
+          item.style.opacity = "0";
+          setTimeout(() => {
+            if (item.style.opacity === "0") {
+              item.style.display = "none";
+            }
+          }, 400);
+        }
+      });
+    }
+
+    // Category button click events
+    memberFilters.forEach((button) => {
+      button.addEventListener("click", function () {
+        memberFilters.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+        filterMembers();
+      });
+    });
+
+    // Search input typing event
+    if (memberSearchInput) {
+      memberSearchInput.addEventListener("input", filterMembers);
+    }
   }
 });

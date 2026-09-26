@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Foundation || Contact US</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+
+<body>
+
+    <!-- ==============================================
+         HEADER
+    =============================================== -->
+    <header class="site-header">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="row align-items-center justify-content-between header-row">
+
+                <!-- Logo Area -->
+                <div class="col-auto">
+                    <a href="index.html" class="brand-logo">
+                        <img src="assets/images/logo.png" alt="Choice Foundation Logo">
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-auto d-none d-lg-block">
+                    <nav class="main-navigation">
+                        <ul class="nav-list">
+                            <li><a href="#" class="nav-link active">Home</a></li>
+                            <li><a href="#" class="nav-link">About</a></li>
+                            <li><a href="#" class="nav-link">Members</a></li>
+                            <li><a href="#" class="nav-link">Franchise</a></li>
+                            <li><a href="#" class="nav-link">Events</a></li>
+                            <li><a href="#" class="nav-link">Gallery</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Actions -->
+                <div class="col-auto d-flex align-items-center">
+                    <button class="search-btn" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="#" class="btn btn-primary-pill ms-4 d-none d-sm-inline-flex">Join the Community <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <button class="mobile-menu-btn d-lg-none ms-3"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ==============================================
+         SEARCH OVERLAY
+    =============================================== -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="search-close-btn" id="searchCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" class="search-form">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-submit-btn"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         MOBILE MENU OVERLAY
+    =============================================== -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <button class="mobile-menu-close" id="mobileMenuClose"><i class="fa-solid fa-xmark"></i></button>
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-list">
+                <li><a href="#" class="mobile-nav-link active">Home</a></li>
+                <li><a href="#" class="mobile-nav-link">About</a></li>
+                <li><a href="#" class="mobile-nav-link">Members</a></li>
+                <li><a href="#" class="mobile-nav-link">Franchise</a></li>
+                <li><a href="#" class="mobile-nav-link">Events</a></li>
+                <li><a href="#" class="mobile-nav-link">Gallery</a></li>
+                <li><a href="#" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary-pill mt-5 w-100 text-center justify-content-center">Join the
+                Community</a>
+        </div>
+    </div>
+
+    <!-- ==============================================
+         MEMBERS HERO SECTION
+    =============================================== -->
+    <section class="contact-hero position-relative d-flex align-items-center">
+        <!-- Full Background Image -->
+        <div class="contact-hero-bg-layer"
+            style="background-image: url('assets/images/member-hero.png');"></div>
+
+        <!-- Optional gradient if text legibility is needed (but image seems to have it) -->
+        <div class="contact-hero-overlay position-absolute w-100 h-100 top-0 start-0">
+        </div>
+
+        <div class="container position-relative z-3 w-100 h-100 d-flex align-items-center">
+            <div class="row w-100 justify-content-between align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-7 col-md-10 py-5 my-5">
+                    <h6 class="text-uppercase fw-bold mb-3 contact-hero-eyebrow text-maroon"
+                        style="letter-spacing: 3px;">OUR MEMBERS</h6>
+                    <h1 class="text-white font-serif mb-4 display-heading">
+                        Talented Makeup Artists<br>
+                        of <span class="text-green">West Bengal</span>
+                    </h1>
+                    <div class="contact-hero-divider bg-maroon mb-4"></div>
+                    <p class="text-white opacity-75 mb-5 max-w-600 pe-lg-4" style="line-height: 1.6;">
+                        Meet our passionate and professional makeup artists who are part of the Choice Foundation
+                        community &mdash;creating beauty, confidence and opportunities across West Bengal.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-4 gap-md-5 align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-users text-green fs-2"></i>
+                            <div>
+                                <h5 class="text-white mb-0 fw-bold">100+</h5>
+                                <p class="text-white opacity-75 mb-0" style="font-size: 0.85rem;">Active Members</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fa-regular fa-star text-green fs-2"></i>
+                            <div>
+                                <h5 class="text-white mb-0 fw-bold">25+</h5>
+                                <p class="text-white opacity-75 mb-0" style="font-size: 0.85rem;">Cities in West Bengal
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <i class="fa-regular fa-heart text-green fs-2"></i>
+                            <div>
+                                <h5 class="text-white mb-0 fw-bold">1 Community</h5>
+                                <p class="text-white opacity-75 mb-0" style="font-size: 0.85rem;">Stronger Together</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==============================================
+         MEMBERS DIRECTORY SECTION
+    =============================================== -->
+    <section class="members-directory py-5 position-relative overflow-hidden">
+        <div class="container position-relative z-3 pt-4">
+
+            <!-- Filters and Search Bar -->
+            <div class="row align-items-center mb-5 pb-2">
+                <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
+                    <div class="d-flex flex-wrap gap-2 member-filters">
+                        <button class="btn btn-member-filter active" data-filter="*">All Members</button>
+                        <button class="btn btn-member-filter" data-filter=".bridal">Bridal Makeup</button>
+                        <button class="btn btn-member-filter" data-filter=".party">Party Makeup</button>
+                        <button class="btn btn-member-filter" data-filter=".fashion">Fashion Makeup</button>
+                        <button class="btn btn-member-filter" data-filter=".editorial">Editorial Makeup</button>
+                        <button class="btn btn-member-filter" data-filter=".sfx">SFX Makeup</button>
+                        <button class="btn btn-member-filter" data-filter=".educators">Educators</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="member-search-container position-relative">
+                        <i class="fa-solid fa-magnifying-glass position-absolute text-muted"
+                            style="left: 15px; top: 50%; transform: translateY(-50%);"></i>
+                        <input type="text" id="memberSearchInput"
+                            class="form-control rounded-pill ps-5 py-2 member-search-input"
+                            placeholder="Search members...">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Members Grid -->
+            <div class="row g-4 member-grid">
+                <!-- Member 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item bridal">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member1.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member1.png" alt="Riya Sen"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">Riya
+                                Sen</h4>
+                            <p class="member-role text-muted small mb-3">Bridal Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Kolkata, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item freelance educators">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member2.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member2.png" alt="Pallabi Das"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Pallabi Das</h4>
+                            <p class="member-role text-muted small mb-3">Educator & Freelance Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Howrah, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item bridal party">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member3.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member3.png" alt="Debjani Roy"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Debjani Roy</h4>
+                            <p class="member-role text-muted small mb-3">Bridal & Party Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Kolkata, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item fashion editorial">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member4.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member4.png" alt="Ankita Sharma"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Ankita Sharma</h4>
+                            <p class="member-role text-muted small mb-3">Fashion & Editorial Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Siliguri, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item professional sfx">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member5.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member5.png" alt="Mousumi Dutta"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Mousumi Dutta</h4>
+                            <p class="member-role text-muted small mb-3">Professional & SFX Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Durgapur, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 6 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item party educators">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member6.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member6.png" alt="Shreya Mukherjee"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Shreya Mukherjee</h4>
+                            <p class="member-role text-muted small mb-3">Educator & Party Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Kolkata, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 7 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item bridal">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member7.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member7.png" alt="Tania Ghosh"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">Tania
+                                Ghosh</h4>
+                            <p class="member-role text-muted small mb-3">Bridal Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Asansol, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 8 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item editorial party">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member8.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member8.png" alt="Neha Pramanik"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">Neha
+                                Pramanik</h4>
+                            <p class="member-role text-muted small mb-3">HD & Airbrush Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Kolkata, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 9 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item bridal">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member9.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member9.png" alt="Madhurima Roy"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Madhurima Roy</h4>
+                            <p class="member-role text-muted small mb-3">Destination Wedding Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Darjeeling, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 10 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item party">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member10.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member10.png" alt="Sanchita Pal"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Sanchita Pal</h4>
+                            <p class="member-role text-muted small mb-3">Party & Festive Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Kolkata, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 11 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item freelance sfx">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member11.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member11.png" alt="Ishita Dey"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Ishita Dey</h4>
+                            <p class="member-role text-muted small mb-3">Freelance & SFX Makeup Artist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Kharagpur, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 12 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 member-item bridal party">
+                    <div class="member-card rounded-custom overflow-hidden bg-white h-100 d-flex flex-column"
+                        style="box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0;">
+                        <a href="assets/images/member12.png" class="glightbox" data-gallery="members">
+                            <div class="member-img-wrapper" style="aspect-ratio: 1/1.1; overflow: hidden;">
+                                <img src="assets/images/member12.png" alt="Priyanka Das"
+                                    class="w-100 h-100 object-fit-cover transition-scale">
+                            </div>
+                        </a>
+                        <div class="member-info p-3 p-xl-4 flex-grow-1 position-relative d-flex flex-column"
+                            style="background-color: #fcfcfc;">
+                            <h4 class="member-name font-outfit fw-bold text-navy mb-1" style="font-size: 1.15rem;">
+                                Priyanka Das</h4>
+                            <p class="member-role text-muted small mb-3">Bridal, Party & Hairstylist</p>
+                            <div class="member-location d-flex align-items-center mt-auto pb-1">
+                                <i class="fa-solid fa-location-dot text-maroon me-2 small"></i>
+                                <span class="text-muted small" style="font-size: 0.8rem;">Kolkata, West Bengal</span>
+                            </div>
+                            <a href="#"
+                                class="member-link-btn position-absolute bg-maroon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none transition-scale"
+                                style="width: 32px; height: 32px; bottom: 20px; right: 20px;">
+                                <i class="fa-solid fa-arrow-right small"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         MEMBER CTA SECTION
+    =============================================== -->
+    <section class="member-cta-section py-5">
+        <div class="container position-relative z-3">
+            <div class="member-cta-banner position-relative overflow-hidden">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 col-md-8 position-relative z-3 member-cta-content">
+                        <div class="text-uppercase text-maroon mb-2 fw-bold tracking-wide" style="letter-spacing: 3px; font-size: 0.85rem;">
+                            JOIN OUR COMMUNITY
+                        </div>
+                        <h2 class="font-serif text-navy mb-3 fw-bold display-heading" style="font-size: 2.8rem; line-height: 1.15;">
+                            Be a Part of Our <span class="text-maroon">Growing Family</span>
+                        </h2>
+                        <p class="text-navy opacity-75 mb-4" style="font-size: 1.05rem; line-height: 1.6; max-width: 500px;">
+                            Showcase your talent, connect with opportunities and grow together with the Choice Foundation community.
+                        </p>
+                        <a href="#" class="btn btn-primary-pill bg-maroon text-white border-0 py-3 px-4 fw-medium mt-2 d-inline-flex align-items-center justify-content-center">
+                            Join the Community <i class="fa-solid fa-arrow-right ms-2 small"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+         FOOTER SECTION
+    =============================================== -->
+    <footer class="footer bg-navy text-white pt-100 pb-4 position-relative overflow-hidden border-none">
+        <div class="container position-relative z-1">
+            <div class="row mb-5">
+                <!-- Column 1 -->
+                <div class="col-lg-3 mb-5 mb-lg-0 pe-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="assets/images/logo.png" alt="Choice Foundation" width="120" class="me-3 footer_logo">
+                        <div>
+
+                        </div>
+                    </div>
+                    <p class="text-white opacity-75 mb-4 footer-text">
+                        A platform for makeup artists, beauty professionals and event experiences across West Bengal and
+                        selected parts of Jharkhand.
+                    </p>
+                    <div class="d-flex gap-3 social-footer">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4 footer-title">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Members</a></li>
+                        <li><a href="#">Franchise</a></li>
+                        <li><a href="#">Events </a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-2 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4 footer-title">Support</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-lg-3 col-md-4 mb-4 mb-lg-0">
+                    <h5 class="mb-4 text-warning footer-title">Get in Touch</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li class="d-flex align-items-start mb-3">
+                            <i class="fa-solid fa-location-dot mt-1 me-3 text-white"></i>
+                            <span class="text-white opacity-75 footer-link">Kolkata, West Bengal</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-envelope me-3 text-white"></i>
+                            <a href="mailto:info@choice-foundation.co.in"
+                                class="text-white opacity-75 footer-link">info@choice-foundation.co.in</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fa-solid fa-phone me-3 text-white"></i>
+                            <span class="text-white opacity-75 footer-link">+91 98765 43210</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 5 (Cursive Text) -->
+                <div class="col-lg-2 d-none d-lg-block position-relative">
+                    <div class="footer-cursive-right text-white">For A<br>More Beautiful<br>Tomorrow</div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="position-relative py-2">
+                <div class="text-center w-100 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <p class="text-white opacity-75 m-0 d-flex align-items-center text-uppercase copyright-text">
+                        &copy; 2026 Choice Foundation. All Rights Reserved
+                        <span class="mx-2 fw-semibold opacity-90">AND DEVELOPED BY</span>
+                        <a href="https://wealll.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/images/Wealll_new.webp" alt="We Alll" class="hover-opacity-75 wealll-logo">
+                        </a>
+                    </p>
+                </div>
+                <a href="#"
+                    class="back-to-top d-none d-md-inline-flex position-absolute top-50 translate-middle-y end-0 align-items-center justify-content-center rounded-circle border border-white text-white social-icon">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Isotope JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
